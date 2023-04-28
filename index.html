@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <article class="container">
+      <h1 class="head">Register</h1>
+      <p>Create your account, it's free and only takes a minute.</p>
+      <form class="form">
+        <label class="label-name">
+          <input
+            class="text-input"
+            type="text"
+            name="FirstName"
+            required
+            placeholder="First Name"
+          />
+          <input
+            class="text-input"
+            type="text"
+            name="LastName"
+            required
+            placeholder="Last Name"
+          />
+        </label>
+        <input
+          class="text-input"
+          type="email"
+          name="Email"
+          required
+          placeholder="Email"
+        />
+        <input
+          class="text-input"
+          type="password"
+          name="Password"
+          required
+          placeholder="Password"
+        />
+        <input
+          class="text-input"
+          type="password"
+          name="ConfirmPassword"
+          required
+          placeholder="Confirm Password"
+        />
+        <label class="label-checkbox">
+          I accept the <a class="ahref" href="#">Terms of Use</a> &
+          <a class="ahref" href="#">Privacy Policy</a>
+          <input type="checkbox" name="Accept" required value="Yes" />
+        </label>
+        <button class="button" type="submit">Register Now</button>
+      </form>
+    </article>
+  </body>
+</html>

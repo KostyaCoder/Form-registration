@@ -1,0 +1,78 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  text-align: center;
+  margin: 10px auto;
+  padding: 20px;
+  min-width: 150px;
+  max-width: 400px;
+  width: 100%;
+  color: grey;
+  background-color: rgb(242, 243, 247);
+  overflow: hidden;
+}
+
+.head {
+  font-size: 2rem;
+  color: black;
+  position: relative;
+}
+
+.head::after,
+.head::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 35%;
+  top: 20px;
+}
+
+.head::after {
+  right: 0px;
+}
+
+.head::before {
+  left: 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.label-name {
+  display: flex;
+  gap: 10px;
+}
+
+.text-input {
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.label-checkbox {
+  text-align: left;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.ahref {
+  color: darkgreen;
+  text-decoration: none;
+}
