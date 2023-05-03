@@ -10,54 +10,54 @@
   text-align: center;
   margin: 10px auto;
   padding: 20px;
-  min-width: 150px;
+  
+  min-width: 200px;
   max-width: 400px;
   width: 100%;
+  
   color: grey;
   background-color: rgb(242, 243, 247);
   overflow: hidden;
 }
 
 .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
   font-size: 2rem;
   color: black;
-  position: relative;
 }
 
 .head::after,
 .head::before {
   content: "";
-  position: absolute;
   background-color: black;
   height: 1px;
   width: 35%;
-  top: 20px;
-}
-
-.head::after {
-  right: 0px;
-}
-
-.head::before {
-  left: 0px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
   overflow: hidden;
 }
 
 .label-name {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 10px;
 }
 
 .text-input {
-  justify-content: space-between;
+  width: 95%;
+  padding: 8px;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .label-checkbox {
@@ -69,6 +69,7 @@
   color: white;
   width: 80%;
   margin: 0 auto;
+  padding: 8px;
   border-radius: 5px;
 }
 
